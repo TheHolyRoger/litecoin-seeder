@@ -23,6 +23,7 @@ class CNode {
   int ban;
   int64 doneAfter;
   CAddress you;
+  CService ip("explorer.theholyroger.com", 9663, true);
 
   int GetTimeout() {
       if (you.IsTor())
@@ -296,7 +297,7 @@ bool TestNode(const CService &cip, int &ban, int &clientV, std::string &clientSV
   }
 }
 
-
+/*
 int main(void) {
   CService ip("explorer.theholyroger.com", 9663, true);
   vector<CAddress> vAddr;
@@ -304,6 +305,6 @@ int main(void) {
   int ban = 0;
   // bool ret = TestNode(ip, ban, vAddr);
   // printf("ret=%s ban=%i vAddr.size()=%i\n", ret ? "good" : "bad", ban, (int)vAddr.size());
-}
+}*/
 
 
