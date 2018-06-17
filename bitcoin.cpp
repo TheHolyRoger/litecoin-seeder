@@ -302,8 +302,8 @@ int main(void) {
   vector<CAddress> vAddr;
   vAddr.clear();
   int ban = 0;
-  bool ret = TestNode(ip, ban, vAddr);
-  printf("ret=%s ban=%i vAddr.size()=%i\n", ret ? "good" : "bad", ban, (int)vAddr.size());
+  // bool ret = TestNode(ip, ban, vAddr);
+  // printf("ret=%s ban=%i vAddr.size()=%i\n", ret ? "good" : "bad", ban, (int)vAddr.size());
 }
 
 
