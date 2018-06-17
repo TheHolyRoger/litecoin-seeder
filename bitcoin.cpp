@@ -296,7 +296,7 @@ bool TestNode(const CService &cip, int &ban, int &clientV, std::string &clientSV
   }
 }
 
-/
+
 int main(void) {
   CService ip("explorer.theholyroger.com", 9663, true);
   vector<CAddress> vAddr;
